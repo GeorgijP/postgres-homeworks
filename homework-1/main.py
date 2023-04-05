@@ -13,7 +13,7 @@ employees_data = []
 custumers_data = []
 orders_data = []
 
-# Перекладываем данные из CSV файлов в словари
+# Перекладываем данные из CSV файлов в списки
 with open('employees_data.csv', 'r') as ed:
     data = csv.DictReader(ed)
     for i in data:
