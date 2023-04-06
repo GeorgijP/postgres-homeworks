@@ -14,17 +14,17 @@ custumers_data = []
 orders_data = []
 
 # Перекладываем данные из CSV файлов в словари
-with open('north_data/employees_data.csv', 'r') as ed:
+with open('employees_data.csv', 'r') as ed:
     data = csv.DictReader(ed)
     for i in data:
         employees_data.append(i)
 
-with open('north_data/customers_data.csv', 'r') as cd:
+with open('customers_data.csv', 'r') as cd:
     data = csv.DictReader(cd)
     for i in data:
         custumers_data.append(i)
 
-with open('north_data/orders_data.csv', 'r') as od:
+with open('orders_data.csv', 'r') as od:
     data = csv.DictReader(od)
     for i in data:
         orders_data.append(i)
