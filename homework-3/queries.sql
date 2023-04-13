@@ -15,7 +15,7 @@ WHERE customers.city = 'London' AND employees.city = 'London' AND shippers.compa
 SELECT product_name, units_in_stock, contact_name, phone
 FROM products
 JOIN suppliers USING(supplier_id)
-WHERE discontinued = 1 AND units_in_stock < 25 AND (category_id = 4 OR category_id = 2)
+WHERE discontinued = 0 AND units_in_stock < 25 AND (category_id = 4 OR category_id = 2)
 
 -- 3. Список компаний заказчиков (company_name из табл customers), не сделавших ни одного заказа
 SELECT company_name
